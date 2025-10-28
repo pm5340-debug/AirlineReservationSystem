@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Flight Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Airline Booking ✈️</h1>
+    </header>
+
+    <main>
+        <section id="search-form">
+            <h2>Find a Flight</h2>
+            <form id="flightSearchForm">
+                <div class="input-group">
+                    <label for="origin">Origin:</label>
+                    <input type="text" id="origin" required placeholder="e.g., JFK">
+                </div>
+                <div class="input-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" required placeholder="e.g., LAX">
+                </div>
+                <div class="input-group">
+                    <label for="departureDate">Departure Date:</label>
+                    <input type="date" id="departureDate" required>
+                </div>
+                <button type="submit">Search Flights</button>
+            </form>
+        </section>
+
+        <section id="results">
+            <h2>Available Flights</h2>
+            <div id="flight-list">
+                <p>Enter your travel details and click 'Search Flights'.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Simple Airline Demo</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
